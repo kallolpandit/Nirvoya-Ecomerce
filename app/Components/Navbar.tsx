@@ -29,16 +29,22 @@ export const Navbar = () => {
           </div>
           <ul className="flex justify-end gap-10 w-1/3 order-2 lg:order-3 font-popins text-base font-normal text-primary ">
             <li className="flex gap-1 items-center">
-              <FaRegUser />
-              Login
+              <span>
+                <FaRegUser />
+              </span>
+              <Link href="#">Login</Link>
             </li>
             <li className="flex gap-1 items-center">
-              <CiHeart />
-              Wishlist
+              <span>
+                <CiHeart />
+              </span>
+              <Link href="#">Wishlist</Link>
             </li>
             <li className="flex gap-2 items-center">
-              <IoBagHandleOutline />
-              My cart
+              <span>
+                <IoBagHandleOutline />
+              </span>
+              <Link href="#">My cart</Link>
               <p className="w-5 h-5 text-center font-popins text-xs leading-5	  bg-[#FF5D5D] text-white rounded-full">
                 1
               </p>
@@ -55,6 +61,7 @@ export const Navbar = () => {
               >
                 Women's Fashion
               </Link>
+              {/* ==========Dropdown Menu  Start========== */}
               <div className="flex justify-between  w-[1200px] absolute left-0 top-full py-8 px-16 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all capitalize">
                 <ul className="text-secondary font-popins font-normal text-sm flex flex-col gap-1.5">
                   <li className=" font-semibold text-base text-primary">
@@ -263,6 +270,7 @@ export const Navbar = () => {
                   </ul>
                 </div>
               </div>
+              {/* ==========Dropdown Menu  End============ */}
             </li>
             <li>
               <Link

@@ -20,6 +20,9 @@ const config: Config = {
     fontFamily: {
       popins: ["Poppins", "sans-serif"],
     },
+    backgroundImage: {
+      banner: "url('/images/banner.png')",
+    },
   },
   plugins: [],
 };
